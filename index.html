@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+      <style>
+        .container{
+           display: grid;
+           width: 1224px;
+           margin: auto;
+           height: 100vh;
+           grid-template-columns:200px repeat( 3, 1fr);
+           grid-template-rows: 200px 150px 250px 350px 100px;
+           font-size: 30px;
+           padding: 20px;
+           justify-content: center;
+                
+        }
+        .contant{
+          background-color: cornflowerblue;
+          border: 3px solid #999;
+        }
+        .sidebar{
+            grid-row:1/-1;
+            background-color: coral;
+        }
+        .header{
+            grid-column:2/-1;
+            background-color: crimson;
+        }
+        .contant4{
+            grid-column: 2/4;
+            background-color: darkgray;
+        }
+        .contant7{
+            grid-column: 3/5;
+            background-color: darkorange;
+        }
+        .contant8{
+            grid-column: 2/-1;
+            background-color: darkslateblue;
+        }
+      </style>
+
+    
+</head>
+<body>
+        <div class="container">
+            <div class="sidebar contant">Sidebar</div>
+            <div class="header contant">Header</div>
+            <div class="contant">Contant 01</div>
+            <div class="contant">Contant 02</div>
+            <div class="contant">Contant 03</div>
+            <div class="contant contant4">Contant 04</div>
+            <div class="contant">Contant 05</div>
+            <div class="contant">Contant 06</div>
+            <div class="contant contant7">Contant 07</div>
+            <div class="contant contant8">Contant 08</div>
+
+        </div>
+</body>
+</html>
